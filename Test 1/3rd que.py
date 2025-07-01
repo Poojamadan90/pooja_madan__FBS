@@ -7,5 +7,5 @@ meters = km * 1000
 centimeters = km * 100000
 
 # Display results
-print(f"Distance in meters: meters")
-print(f"Distance in centimeters:centimeters")
+print("Distance in meters: meters")
+print("Distance in centimeters:centimeters")
