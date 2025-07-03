@@ -1,3 +1,5 @@
+#calculate basic salary
+
 basic_salary = int(input("Enter basic_salary:"))
 
 da = (10/100)*basic_salary
