@@ -1,4 +1,4 @@
-
+# check triangle is valid or not based on sides of triangle
 
 A = int(input("Enter side a;"))
 B = int(input("Enter side b:"))
