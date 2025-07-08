@@ -1,3 +1,5 @@
+# ckeck given number is palindrome number or not
+
 Num = int(input("Enter Number:"))
 
 First_Number   = Num % 10      #1
