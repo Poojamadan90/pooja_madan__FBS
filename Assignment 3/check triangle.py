@@ -1,3 +1,5 @@
+# check wheather traingle is valid or not based on angles
+
 Angle_A = int(input("Enter angle of triangle A:"))
 Angle_B = int(input("Enter angle of triangle B:"))
 Angle_c= int(input("Enter angle of triangle C :"))
