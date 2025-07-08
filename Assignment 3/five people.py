@@ -1,4 +1,4 @@
-
+# calculate total amount of ticket to travel for five persons
 
 age1 = int(input("Enter age of first person"))
 ticket1= int(input("Enter ticket valuue for first person"))
