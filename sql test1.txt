@@ -1,0 +1,106 @@
+FRN-12P0625/004
+Set A
+
+Question:1
+Select name, salary
+From Employees
+Order by salary Desc;
+
+Question:2
+Select name, salary
+from Employees
+Order by salary DESC
+Limit 5;
+
+Question:3
+select * from employee
+limit 2,1;
+
+
+Question:4
+select did count(*)
+from employee
+group by did;
+
+
+Question:5
+select dept_id, AVG(salary) AS avg_salary
+from Employees
+group by dept_id
+having avg(salary) > 50000;
+
+
+Question:6
+Retrieve a list of products from the `Products` table where the product name contains the word
+"Laptop" .
+select * from products
+where name =
+(select name from products where name ="Laptop";
+
+
+
+Question:8
+
+select*from students
+where name  like "A%"
+
+
+
+
+
+Question:9
+select month(or_date) as ord_month, count(*) as total_ord
+from orders
+group by month(or_date)
+having count(*) > 100;
+
+
+
+Question:10
+
+select category, sum(sales_amount) as total_sales, 
+avg(sales_amount) as avg_sales
+from sales
+group by category
+having sum(sales_amount) > 100000
+
+
+
+Question :11
+ a) The total number of employees
+
+Question :12
+  b) 8
+
+question :13
+c) Having
+
+
+question :14
+b) Returns all rows from the left table and matching rows from the right table
+
+Question:15
+b) Hellow world
+
+Quetion :16
+select c.region, sum(o.total_amount) as total_orders
+from orders o
+join customers c
+on o.customer_id = c.customer_id
+group by c.region
+having sum(o.total_amount) > 10000;
+
+
+Quetion :17
+select b.author_id, sum(s.quantity) as total_books_sold
+from books b
+join sales s
+on b.book_id = s.book_id
+group by b.author_id
+having sum(s.quantity) > 100;
+
+
+
+
+
+
