@@ -1,0 +1,53 @@
+Sql test 2
+
+Q1)select*from employee;
+
+
+
+Q3)select * from orders
+order by purch_amt desc;
+
+
+Q3)select name,city
+from salesman
+where city="Paris";
+
+
+Q4)select order_no, order_date, purch_amt
+from orders
+where salesman_id = 5001;
+
+
+
+
+Q5)select avg(commission)from salesman;
+
+
+Q6)select salesman_id, count(customer_id) 
+from customer
+group by salesman_id;
+
+
+Q7)select customer_id, max(purch_amt) 
+from orders
+group by customer_id;
+
+
+Q8)select c.cust_name, s.name
+from customer c
+join salesman s
+on c.name_id = s.name_id;
+
+Q9)select o.order_no, c.name
+FROM orders o
+JOIN customer c
+ON o.name = c.customer_id;
+
+
+Q10)select o.order_no, o.order_date, o.purch_amt, o.salesman_id
+from orders o
+where o.salesman_id = 
+    (select salesman_id
+    from customer
+    where customer_id = 3007);
+
